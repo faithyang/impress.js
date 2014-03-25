@@ -183,7 +183,9 @@
     
     if (!impressSupported) {
         // we can't be sure that `classList` is supported
-        body.className += " impress-not-supported ";
+        if(!body.classList.contains("impress-not-supported")){
+	  body.classList.add("impress-not-supported");
+	}
     } else {
         body.classList.remove("impress-not-supported");
         body.classList.add("impress-supported");
