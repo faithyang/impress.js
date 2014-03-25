@@ -169,7 +169,7 @@
     
     var ua = navigator.userAgent.toLowerCase();
     var impressSupported = 
-                          // browser should support CSS 3D transtorms 
+                          // browser should support CSS 3D transforms 
                            ( pfx("perspective") !== null ) &&
                            
                           // and `classList` and `dataset` APIs
